@@ -25,7 +25,7 @@ ls -lah /var/log >> "$LOG_FILE"
 
 #Testing Step
 quem="O Mata é o Maior!!"
-quem >> "$LOG_FILE"
+export LOG_FILE="$LOG_FILE $quem"
 grep "Mata" "$LOG_FILE"
 
 # Step 6: Print lines starting with "-rw" from the LOG_FILE
