@@ -2,10 +2,10 @@
 
 # Step 1: Create a log directory in /tmp (or increment the name if it exists)
 log_dir="/tmp/log"
-count=1
+
 while [ -d "$log_dir" ]; do
-  log_dir="/tmp/log$count"
-  count=$((count + 1))
+  log_dir="/tmp/log1"
+  
 done
 
 mkdir -p "$log_dir"
