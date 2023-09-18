@@ -2,10 +2,10 @@
 
 # Step 1: Create a log directory in /tmp (or increment the name if it exists)
 log_dir="/tmp/log"
-
+count=1
 while [ -d "$log_dir" ]; do
-  log_dir="/tmp/log1"
-  
+  log_dir="/tmp/log$count"
+  count=$((count + 1))
 done
 
 mkdir -p "$log_dir"
@@ -23,7 +23,7 @@ ls -lah >> "$LOG_FILE"
 # Step 5: Run "ls -lah /var/log" and append the output to the LOG_FILE
 ls -lah /var/log >> "$LOG_FILE"
 
-# Create and set the text_to_append variable
+# Create variable
 quem_e_o_maior="
 
 
@@ -33,7 +33,7 @@ O Mata é o Maior!!!
 
 "
 
-# Now you can use the variable in your script
+# Use the Variable
 echo "$quem_e_o_maior" >> "$LOG_FILE"
 grep "^O Mata" "$LOG_FILE"
 
