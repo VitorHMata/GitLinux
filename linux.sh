@@ -24,10 +24,11 @@ ls -lah >> "$LOG_FILE"
 ls -lah /var/log >> "$LOG_FILE"
 
 # Create and set the text_to_append variable
-text_to_append="This is the text you want to add."
+quem_e_o_maior="O Mata é o Maior!!!"
 
 # Now you can use the variable in your script
-echo "$text_to_append" >> "$LOG_FILE"
+echo "$quem_e_o_maior" >> "$LOG_FILE"
+grep "*Mata" "$LOG_FILE"
 
 # Step 6: Print lines starting with "-rw" from the LOG_FILE
 grep "^-rw" "$LOG_FILE"
