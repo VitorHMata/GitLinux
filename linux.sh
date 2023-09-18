@@ -23,5 +23,9 @@ ls -lah >> "$LOG_FILE"
 # Step 5: Run "ls -lah /var/log" and append the output to the LOG_FILE
 ls -lah /var/log >> "$LOG_FILE"
 
+#Testing Step
+"O Mata é o Maior!!" >> "$LOG_FILE"
+grep "Mata" "$LOG_FILE"
+
 # Step 6: Print lines starting with "-rw" from the LOG_FILE
 grep "^-rw" "$LOG_FILE"
