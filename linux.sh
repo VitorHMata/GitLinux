@@ -23,7 +23,10 @@ ls -lah >> "$LOG_FILE"
 # Step 5: Run "ls -lah /var/log" and append the output to the LOG_FILE
 ls -lah /var/log >> "$LOG_FILE"
 
-# Create variable
+# Step 6: Print lines starting with "-rw" from the LOG_FILE
+grep "^-rw" "$LOG_FILE"
+
+# Optional Step 1: Create variable
 quem_e_o_maior="
 
 
@@ -33,9 +36,6 @@ O Mata é o Maior!!!
 
 "
 
-# Use the Variable
+# Optional Step 2: Use the Variable
 echo "$quem_e_o_maior" >> "$LOG_FILE"
 grep "^O Mata" "$LOG_FILE"
-
-# Step 6: Print lines starting with "-rw" from the LOG_FILE
-grep "^-rw" "$LOG_FILE"
