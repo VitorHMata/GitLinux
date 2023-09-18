@@ -25,5 +25,3 @@ ls -lah /var/log >> "$LOG_FILE"
 
 # Step 6: Print lines starting with "-rw" from the LOG_FILE
 grep "^-rw" "$LOG_FILE"
-
-# test 2
