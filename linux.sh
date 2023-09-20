@@ -40,3 +40,4 @@ O Mata é o Maior!!!
 # Optional Step 2: Use the Variable
 echo "$quem_e_o_maior" >> "$LOG_FILE"
 grep "^O Mata" "$LOG_FILE"
+echo "$quem_e_o_maior"
