@@ -28,12 +28,13 @@ grep "^-rw" "$LOG_FILE"
 
 # Optional Step 1: Create variable
 quem_e_o_maior="
-
-
+.********
+.*****
+.**
 O Mata é o Maior!!!
-
-
-
+.**
+.*****
+.********
 "
 
 # Optional Step 2: Use the Variable
