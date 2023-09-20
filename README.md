@@ -18,3 +18,6 @@
 - It runs `ls -lah` and appends the output to LOG_FILE.
 - Next, it runs `ls -lah /var/log` and appends the output to LOG_FILE.
 - Finally, it prints lines from LOG_FILE that start with "-rw."
+-
+-
+-
