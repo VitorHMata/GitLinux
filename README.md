@@ -1,12 +1,12 @@
 # Linux Bash Script
 
-**Script Author:** [Your Name]
+**Script Author:** Vitor Mata
 
 ## How to Run the Script
 
 1. Make sure you have bash installed on your system.
-2. Clone this repository: `git clone <repository_url>`
-3. Navigate to the cloned directory: `cd <repository_directory>`
+2. Clone this repository: `git clone https://github.com/VitorHMata/GitLinux`
+3. Navigate to the cloned directory: `cd GitLinux`
 4. Make the script executable: `chmod +x linux.sh`
 5. Run the script: `./linux.sh`
 
