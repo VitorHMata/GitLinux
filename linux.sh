@@ -1,14 +1,18 @@
 #!/bin/bash
 
-# Step 1: Create a log directory in /tmp (or increment the name if it exists)
+# Step 1: Create a log directory in /tmp and if log folder already exist create folder with name log1
 log_dir="/tmp/log"
-count=1
-while [ -d "$log_dir" ]; do
-  log_dir="/tmp/log$count"
-  count=$((count + 1))
-done
+new_dir_name="/tmp/log1"
 
-mkdir -p "$log_dir"
+if [ -d "$log_dir" ]; then
+  log_dir="$new_dir_name"
+fi
+
+if [ -d "$log_dir" ]; then
+  echo "Log1 file already exists."
+  mkdir -p "$log_dir"
+fi
+
 
 # Step 2: Create an output.txt file inside the log directory
 output_file="$log_dir/output.txt"
