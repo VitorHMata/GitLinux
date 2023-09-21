@@ -4,11 +4,10 @@
 
 ## How to Run the Script
 
-1. Make sure you have bash installed on your system.
-2. Clone this repository: `git clone https://github.com/VitorHMata/GitLinux`
-3. Navigate to the cloned directory: `cd GitLinux`
-4. Make the script executable: `chmod +x linux.sh`
-5. Run the script: `./linux.sh`
+1. Clone this repository: `git clone https://github.com/VitorHMata/GitLinux`
+2. Navigate to the cloned directory: `cd GitLinux`
+3. Make the script executable: `chmod +x linux.sh`
+4. Run the script: `./linux.sh`
 
 ## Script Explanation
 
@@ -17,7 +16,11 @@
 - The script exports the path of "output.txt" as an environment variable called LOG_FILE.
 - It runs `ls -lah` and appends the output to LOG_FILE.
 - Next, it runs `ls -lah /var/log` and appends the output to LOG_FILE.
-- Finally, it prints lines from LOG_FILE that start with "-rw."
-- O Mata é mesmo o maior
+- It prints lines from LOG_FILE that start with "-rw."
+- Finally, creates a variable named `o_mata_e_o_maior` 
+- It appends the variable value to LOG_FILE
+- It prints lines from LOG_FILE that start with "O Mata"
+- And finally prints the variable value from the variable `o_mata_e_o_maior`
+- And for the record: O Mata é mesmo o maior!!!
 -
 -
