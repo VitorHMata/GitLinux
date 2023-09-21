@@ -7,7 +7,7 @@ new_dir_name="/tmp/log1"
 if [ -d "$log_dir" ]; then
   echo "Log folder already exists. Creating a Log1 folder"
   log_dir="$new_dir_name"
-  else
+else
   echo "Log1 folder already exists."
 fi
 
