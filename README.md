@@ -1,9 +1,12 @@
 # Linux Bash Script
 
+This is a Linux and Git exercise
+
 **Script Author:** Vitor Mata
 
 ## How to Run the Script
 
+Use the terminal to run the following commands:
 1. Clone this repository: `git clone https://github.com/VitorHMata/GitLinux`
 2. Navigate to the cloned directory: `cd GitLinux`
 3. Make the script executable: `chmod +x linux.sh`
@@ -22,5 +25,3 @@
 - It prints lines from LOG_FILE that start with "O Mata"
 - And finally prints the variable value from the variable `o_mata_e_o_maior`
 - And for the record: O Mata é mesmo o maior!!!
--
--
