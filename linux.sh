@@ -5,14 +5,15 @@ log_dir="/tmp/log"
 new_dir_name="/tmp/log1"
 
 if [ -d "$log_dir" ]; then
+  echo "Log folder already exists. Creating a Log1 folder"
   log_dir="$new_dir_name"
 fi
 
 if [ -d "$log_dir" ]; then
-  echo "Log1 file already exists."
-  mkdir -p "$log_dir"
+  echo "Log1 folder already exists."
 fi
 
+mkdir -p "$log_dir"
 
 # Step 2: Create an output.txt file inside the log directory
 output_file="$log_dir/output.txt"
