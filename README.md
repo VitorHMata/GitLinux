@@ -15,9 +15,10 @@ Use the terminal to run the following commands:
 ## Script Explanation
 
 - The script creates a directory named "log" in /tmp.
+- It then creates an "output.txt" file inside the "log" directory.
 - If log folder already exist create folder with name "log1" and prints "Log folder already exists. Creating a Log1 folder".
 - If log1 folder already exist prints "Log1 folder already exists.".
-- It then creates an "output.txt" file inside the "log" directory.
+- It then creates an "output.txt" file inside the "log1" directory.
 - The script exports the path of "output.txt" as an environment variable called LOG_FILE.
 - It runs `ls -lah` and appends the output to LOG_FILE.
 - Next, it runs `ls -lah /var/log` and appends the output to LOG_FILE.
