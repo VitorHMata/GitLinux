@@ -27,4 +27,4 @@ Use the terminal to run the following commands:
 - It appends the variable value to LOG_FILE
 - It prints lines from LOG_FILE that start with "O Mata"
 - And finally prints the variable value from the variable `o_mata_e_o_maior`
-- And for the record: O Mata é mesmo o maior!!!
+- And for the record: O Mata é mesmo o maior!!! ;P
